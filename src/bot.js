@@ -103,10 +103,10 @@ async function getPrice() {
  * Function for sending the stand-alone price to a specific channel.
  */
 let previousPrice, price;
-async function postPrice(channelId) {
+async function postPrice("827403996272132096") {
     try {
         let price = await getPrice();
-        let channel = client.channels.cache.get(channelId);
+        let channel = client.channels.cache.get("827403996272132096");
         if (price > 0) {
             let emoji = price > previousPrice ? "<:GreenSafu:828471113754869770>" : "<:RedSafu:828471096734908467>";
             await channel.send(emoji + " " + price);
