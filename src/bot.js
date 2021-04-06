@@ -121,7 +121,7 @@ async function postPrice(channelId) {
 /**
  * Sends the stand-alone price every 20 seconds to desired channel.
  */
-setInterval(() => postPrice("824212242480103445"), 20 * 1000); //Change this to your Channel Id
+setInterval(() => postPrice("828736499063324703"), 20 * 1000); //Change this to your Channel Id
 
 /**
  * Basic message command.
